@@ -1,0 +1,332 @@
+/* Police d'ecriture */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/*Pour tous les elements*/
+*{
+    font-family:'Montserrat';
+}
+
+
+body{
+    margin: 0 auto;
+}
+
+
+/* tete de page */ 
+
+/*Alignement des textes du menu*/
+/*C'est la creation de boites avec des elements dedans*/
+
+header.header{
+    display: flex;
+    align-items: center;
+}
+
+/*Mise en place du logo*/
+header.header img {
+    width: 150px;
+}
+
+section.top-page{
+    background: url('images/bg.jpg');
+    height: 80vh;
+    background-size: cover;
+    padding: 25px;
+}
+
+/* Page de bienvenue */
+
+.landing-page{
+    padding: 20px 50px;
+}
+
+.big-title{
+    color: white;
+    font-size: 60px;
+    font-family: "Abril FatFace" ;
+    font-weight: 100 ;
+
+}
+
+.Linkdin{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 160px;
+    font-size: 20px; /* taille */
+}
+
+/* Menu de navigation */
+
+menu.menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 1200px;
+    margin-left: 40px;
+}
+
+menu.menu li{
+    color: white;
+    width: 600px;
+    text-align: center;
+}
+
+.lien{
+    text-decoration: none;
+    color : white;
+}
+
+
+/* service */
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery-icon{
+    font-size: 50%;
+}
+
+.service-details{
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+.info-ent{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Experiences */
+.tache{
+    margin: 100px;
+}
+.experiences{
+    margin: 100px
+}
+
+.section-title{
+    font-size: 50px;
+    font-family: 'Abril FatFace';
+    font-weight: 100;
+    position: relative; /* permet de positionner des elements ou on veut par rapport a lui */
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: grey;
+    width: 50px;
+    height: 7px;
+    bottom: -10px;; /* permet d'etre sous le texte */
+}
+
+.entreprises{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exp-box{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    
+}
+.no-grid{
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.exp1{
+    background-image: url(images/GRC.jpg);
+}
+
+.exp2{
+    background-image: url(images/LZN.jpg);
+}
+
+.exp3{
+    background-image: url(images/RIDE.jpg);
+}
+
+
+.exp-details{
+    background-color: #FFFFFFDF;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    padding: 5px 20px;
+}
+.exp-name{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+.exp-info{
+    color: rgb(71, 71, 71); 
+    font-weight: 800;
+    line-height: 3px;
+    font-size: 14px;
+} 
+
+.exp-savoir{
+    color: rgb(71, 71, 71); 
+    font-weight: 800;
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+} 
+
+.info{
+    background-color: #FFFFFFDF;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 20px;
+    margin-top: 25%;
+}
+
+.service{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tache-info{
+    margin: 10px;
+    font-size: 100%;
+}
+
+/* Etudes et formations */
+.etudes{
+    margin: 100px;
+}
+
+.etablissements{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.etude1{
+    background-image: url(images/BRV.jpg);
+}
+.etude2{
+    background-image: url(images/BAC.jpg);
+}
+.etude3{
+    background-image: url(images/ISEN.jpg);
+}
+
+/* Autres experiences */
+
+.autre{
+    margin: 100px;
+}
+
+.diplome1{
+    background-image: url(images/LDN.jpg);
+}
+
+.diplome2{
+    background-image: url(images/PERMIS.jpg);
+}
+
+.diplome3{
+    background-image: url(images/PARIS.jpg);
+}
+
+
+
+
+/* Compétences */ 
+
+.title-competences{
+    margin: 100px;
+    font-size: 50px;
+    font-family: 'Abril FatFace';
+    font-weight: 100;
+    position: relative;
+}
+
+.title-competences::before{
+    content: "";
+    position: absolute;
+    background-color: grey;
+    width: 50px;
+    height: 7px;
+    bottom: -10px;; /* permet d'etre sous le texte */
+}
+
+.competences{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.competences-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery-icon{
+    font-size: 50%;
+}
+
+.service-details{
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+
+
+/* A propos */ 
+
+.paragraphe{
+    text-align: center;
+    margin: 15%;
+    font-style: italic;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.auteur{
+    text-align: right;
+    margin-right: 20%;
+    font-style: italic;
+    margin-bottom: 15%;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv{
+    text-decoration: none;
+    color: black
+}
+
